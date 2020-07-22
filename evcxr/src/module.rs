@@ -133,7 +133,7 @@ impl Module {
             if let Ok(path) = which::which("sccache") {
                 self.sccache = Some(path);
             } else {
-                bail!("Couldn't find sccache. Try running `cargo install sscache`.");
+                bail!("Couldn't find sccache. Try running `cargo install sccache`.");
             }
         } else {
             self.sccache = None;
